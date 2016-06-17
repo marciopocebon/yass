@@ -10,7 +10,7 @@ class ApplicationException(Exception):
 
 class EchoService:
     def echo(self, value: Any) -> Any:
-        pass
+        raise NotImplementedError()
 
 
 # todo: model internal base type
@@ -53,7 +53,7 @@ class Price:
 
 class PriceEngine:
     def subscribe(self, instrumentIds: List['Integer']) -> None:
-        pass
+        raise NotImplementedError()
 
 
 class PriceKind(Enum):
@@ -63,7 +63,7 @@ class PriceKind(Enum):
 
 class PriceListener:
     def newPrices(self, prices: List['Price']) -> None:
-        pass
+        raise NotImplementedError()
 
 
 class SystemException(Exception):

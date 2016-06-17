@@ -12,7 +12,7 @@ class Bond(contract.Instrument):
 
 class InstrumentService:
     def getInstruments(self) -> List['contract.Instrument']:
-        pass
+        raise NotImplementedError()
 
     def showOneWay(self, testBoolean: bool, testInt: int) -> None:
-        pass
+        raise NotImplementedError()

@@ -1,4 +1,4 @@
-from .. import contract
+from .... import contract
 
 
 class Stock(contract.Instrument):
