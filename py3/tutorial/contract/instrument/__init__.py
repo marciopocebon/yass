@@ -1,6 +1,6 @@
 from typing import List
 
-from . import contract
+from ... import contract
 
 
 class Bond(contract.Instrument):

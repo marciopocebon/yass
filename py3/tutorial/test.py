@@ -1,8 +1,8 @@
 from typing import Any
 
 from . import contract as c
-from . import contract_instrument as ci
-from . import contract_instrument_stock as cis
+from .contract import instrument as ci
+from .contract.instrument import stock as cis
 
 bond = ci.Bond()  # type: ci.Bond
 bond.id = c.Integer(123)
@@ -10,7 +10,7 @@ bond.name = "ABB"
 bond.coupon = 1.5
 bond.expiration = c.Expiration("21.07.2016")
 # bond.blabla = 123
-# bond.id = 123
+# bond.name = 123
 print("bond:", vars(bond))
 
 stock = cis.Stock()  # type: cis.Stock
